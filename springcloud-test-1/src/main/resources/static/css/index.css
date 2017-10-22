@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li{
+    margin-top:30px;
+    /*border-color: #96b8e7;*/
+    margin:20px 10px 5px;
+}
+.nav ul li a{
+    display:block;
+    height:30px;
+    width:100%;
+    line-height:30px;
+    border:2px solid #96b8e7;
+    background-color: #e9f1ff;
+    text-align:center;
+    font-weight: 500;
+    font-size:16px;
+    cursor:pointer;
+}
+.nav ul li a:hover{
+    background-color: #0273bc;
+}

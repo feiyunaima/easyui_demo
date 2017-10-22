@@ -1,0 +1,26 @@
+<script type="text/javascript" src="js/student.js"></script>
+<link rel="stylesheet" type="text/css" href="css/student.css"/>
+
+
+<table id="student"></table>
+
+<div id="student_tool" style="padding:5px;">
+    <div style="margin-bottom:5px;">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="student_tool.add();">添加</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="student_tool.edit();">修改</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="student_tool.remove();">删除</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-redo" plain="true" id="redo" onclick="student_tool.redo();">取消编辑</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-search" onclick="student_tool.reload();">查询</a>
+    </div>
+</div>
+
+<form id="student_add" style="margin:0;padding:5px 0 0 25px;color:#333;">
+    <p>学校名称：<input id= "student_add_name" type="text" name="student" class="textbox" style="width:200px;"/></p>
+</form>
+
+
+<form id="student_edit" style="margin:0;padding:5px 0 0 25px;color:#333;">
+    <input type="hidden" name="id" class="textbox" style="width:200px;"/>
+    <p>学生名称：<input type="text" name= "name"  class="textbox" style="width:200px;"/></p>
+    <p>学校名称：<input type="text" name= "schoolname"  class="textbox" style="width:200px;"/></p>
+</form>

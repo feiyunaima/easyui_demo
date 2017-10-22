@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Basic Panel - jQuery EasyUI Demo</title>
+    <link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css"/>
+    <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="easyui/demo.css">-->
+    <script type="text/javascript" src="easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body class="easyui-layout">
+<div data-options="region:'north',border:false" style="height:80px;background:url(img/logo.png) no-repeat;padding:10px">
+</div>
+<div data-options="region:'west',split:true,title:'导航'" style="width:120px;">
+    <div class="nav">
+        <ul>
+            <li><a id="btn_school">学校</a></li>
+            <li><a id="btn_student">学生</a></li>
+        </ul>
+
+    </div>
+</div>
+<div id="center" data-options="region:'center'" style="width:1000px">
+    <div id="tabs" class="easyui-tabs" >
+        <div title="起始页" iconCls="icon-house" data-options="closable:true" style="padding:0 10px;display:block;">
+            欢迎来到后台管理系统！
+        </div>
+    </div>
+
+</div>
+
+<div data-options="region:'south',split:true" style="height:50px;background:#ffffff;padding:10px"></div>
+
+</body>
+</html>
